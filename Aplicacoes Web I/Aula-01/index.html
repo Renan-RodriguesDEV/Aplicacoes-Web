@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Basicas Para HTML5</title>
+    <script>
+        window.alert("Bem vindo a Aula-1")
+    </script>
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+            width: auto;
+            background: orange;
+            text-align: center;
+            font-family: monospace;
+            font-size: larger;
+            color: #000000;
+        }
+
+        .link {
+            text-decoration: none;
+            border: 1px solid yellow;
+            border-radius: 3px;
+            background-color: #6ee2ff;
+        }
+
+        .link:hover {
+            background: linear-gradient(#fff, #6ee2ff);
+            font-weight: bold;
+
+        }
+
+        span {
+            color: aliceblue;
+            border-left: #000000 solid;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #fff;
+            animation-name: anima;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            padding: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        @keyframes anima {
+            from {
+                background: transparent;
+            }
+
+            to {
+                background: url(https://64.media.tumblr.com/70c7fdf1c0af225de84d0787c33b027b/268a82ca6cb2a0f5-c6/s500x750/021df7474373701295ce311cf0bc29fd8e68e69a.gif);
+            }
+        }
+
+        .img {
+            border: black solid 5px;
+            border-radius: 40px;
+            margin-top: 5%;
+            width: 300px;
+            padding: 150px;
+            background-image: url(https://media.istockphoto.com/id/1300888546/pt/vetorial/html5-css3-and-javascript-program-icons-on-transparent-background.jpg?s=170667a&w=0&k=20&c=8D2QBR_2OgMb_y8cbqTj-hXQTeOa9-n2-gzR2GxyECc=            );
+        }
+
+        .img:hover {
+            background-image: url(https://rockntech.com.br/wp-content/uploads/2011/06/gif-nyan-mario.gif);
+            border: greenyellow solid 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="titulo">
+        <h1>
+            Primeiro Titulo
+        </h1>
+        <h2>
+            Segundo Titulo
+        </h2>
+        <h3>
+            Terceiro Titulo
+        </h3>
+    </section>
+    <p>
+        O <a class='link' id="link" href="https://gist.github.com/profburnes/9d4d0ae6926e3adb6be7a9f6d1194064"
+            target="_blank">
+            HTML5</a>
+        É a linguagem de codigos por trás de uma estrutura de um site hospedado ou não em um browser
+    </p>
+    <div class="borda-img"></div>
+    <!-- <img  src="https://gamedeveloper.com.br/content/images/2014/07/Screen-Shot-2014-07-01-at-4.49.17-PM.png"
+        alt="Imagem da logo do HTML5" > -->
+    <div class="img" id="img"></div>
+
+</body>
+
+
+<br>
+<footer>
+    <span>Renan Rodrigues&copy;2023</span>
+</footer>
+
+</html>

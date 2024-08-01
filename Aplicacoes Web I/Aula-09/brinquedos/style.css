@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+div{
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Times;
+}
+h1{
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline;
+    color: yellow;
+}
+h2{
+    font-size: 26px;
+    color: red;
+}
+p{
+    font-size: 15px;
+    line-height: 30px;
+    color: aliceblue;
+}
+span{
+    color: aqua;
+    font-weight: bold;
+}
+a{
+    border-radius: 8px;
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+a:hover{
+    background-color: red;
+    color: aliceblue;
+}
+img{
+    width: 400px;
+    height: 300px;
+}

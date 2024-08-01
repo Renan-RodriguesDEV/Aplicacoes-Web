@@ -3,6 +3,7 @@ function enter() {
   btn.innerText = "Entrou";
   let back = document.getElementById("body");
   back.style.backgroundColor = "gray";
+  console.log("Mudando de cor");
 }
 
 let btn = document.getElementById("btn");

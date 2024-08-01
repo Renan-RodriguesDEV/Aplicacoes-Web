@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        * {
+            align-items: center;
+            margin: 5% 5%;
+        }
+
+        table {
+            font-family: monospace;
+            border: 1px solid black;
+            /*borda da tabela*/
+            border-radius: 5px;
+            border-collapse: collapse;
+            /*remover espaçamento entre as bordas da tabela */
+        }
+
+        thead,
+        tfoot {
+            font-size: large;
+            background: whitesmoke;
+            color: green;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /*efeito zebrado*/
+            background-color: gray;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: green;
+            color: white;
+        }
+
+        th,
+        td {
+
+            width: 400px;
+            border: 1px solid black;
+            /*borda dentro da tabela*/
+            padding: 8px;
+        }
+
+        #nu {
+            text-align: right;
+        }
+
+        #ga,
+        #cat {
+            text-align: start;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <table><!-- cria uma tabela -->
+        <caption style="text-transform:uppercase; font-family: times new roman;border-bottom: 5px solid violet;padding: 3px;"><strong>Tabela de Games</strong>
+        </caption><!-- caption é o titulo da tabela -->
+        <thead>
+            <tr class="t1"> <!-- <tr> define uma linha -->
+                <th id="ga">Jogo</th><!-- <th> define um cabeçalho -->
+                <th id="cat">Categoria</th>
+                <th id="nu">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="t2">
+                <td id="ga">Grand Thef Auto V</td><!-- <td> define coluna ou cedula de dados -->
+                <td id="cat">Mundo Aberto</td>
+                <td id="nu">R$ 100,00</td>
+            </tr>
+            <tr class="t3">
+                <td id="ga">Red Dead Redempition II</td>
+                <td id="cat">Mundo Aberto</td>
+                <td id="nu">R$ 150,00</td>
+            </tr>
+            <tr class="t4">
+                <td id="ga">God of War Rognarok</td>
+                <td id="cat">Ação e Aventura</td>
+                <td id="nu">R$ 300,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="t5">
+                <td colspan="2" id="cat">Valor_Total</td> <!-- colaspan para mesclar a linha, rowspan para colunas -->
+                <td id="nu">R$ 550,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+<footer>
+    <div>
+        <p style="border-left: 1px solid green;padding: 5px;">
+            Renan_Rodrigues&copy;
+        </p>
+    </div>
+</footer>
+<script>
+    var nome = prompt("Qual Seu nome")
+    alert(`Bem vindo a aula-4, ${nome}`)
+</script>
+
+</html>

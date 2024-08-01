@@ -1,0 +1,32 @@
+body{
+    margin: auto;
+    font-family: times;
+    background-color: white;
+    width: 1000px;
+    align-items: center;
+}
+
+div{
+    text-align: center;
+}
+
+.back-azul{
+    margin: 10px auto;
+    background-color: #0094b9;
+    padding: 3px 6px;
+    color: white;
+}
+
+.cont-principal{
+    background-color: gainsboro;
+    padding: 3px 6px;
+}
+
+.txt-azul{
+    color: #0094b9;
+    font-size: 18px
+}
+
+.logo{
+    background-color: white;
+}

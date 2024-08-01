@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p>Digitando palavras</p>
+    </header>
+    <main>
+        <h1>Caixa de texto HTML</h1>
+        <p>Descreva abaixo sua satisfação com o HTML5. <br>
+            Deixe também suas sugestões para que possamos fazer melhorias.
+        </p>
+        <div>
+            <form action="formulario.html" method="get">
+                <label for="caixa">caixa de texto</label>
+                <textarea name="caixa" maxlength="500"></textarea>
+                <button type="submit" id="valor">to send</button>
+            </form>
+        </div>
+        <h2>Pessoal</h2>
+        <p>Preencha com seus dados o formulario abaixo</p>
+        <div>
+            <form action="formulario.html" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite o seu nome de usuario" required />
+        </div>
+        <div>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="data" max="01-01-2005" required />
+        </div>
+        <div>
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="usuario@gmail.com.br" required />
+        </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2023 - Renan Rodrigues</p>
+    </footer>
+</body>
+
+</html>

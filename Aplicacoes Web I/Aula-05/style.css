@@ -1,0 +1,68 @@
+* {
+    margin: 10px 80px 10px 80px;
+    font-family: monospace;
+    align-items: center;
+    padding: 2px;
+    background-color: #747474;
+    color: #fff;
+    height: auto;
+    width: auto;
+}
+
+body {
+    border: solid #202020;
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-de-ficcao-cientifica-futurista-moderno_35913-2152.jpg);
+}
+
+header,
+header p {
+    background-color: #007585;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-align: center;
+    background-color: #202020;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    background-color: #202020;
+}
+
+form,
+label,
+input {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid green;
+    background-color: #202020;
+}
+
+div {
+    background: linear-gradient(#007585, #747474);
+}
+
+button {
+    border: 1px solid green;
+    border-radius: 2px 2px;
+    background-color: green;
+}
+
+textarea {
+    display: flex;
+    height: 150px;
+    width: 95%;
+    background-color: #fff;
+}
+
+textarea:hover {
+    background-color: #202020;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+body{
+    background-color: #0077ff;
+    margin: 0;
+}
+
+div{
+    margin: 20px 80px 10px 80px;
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+    transition: linear 1s;
+}
+
+div:hover{
+    background-color: azure;
+}
+
+img{
+    width: 800px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+    line-height: 30px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.verde{
+    color: green;
+    font-weight: bold;
+}
+
+span{
+    font-size: 18px;
+}

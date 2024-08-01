@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilo da pagina -->
+    <style>
+        * {
+            font-family: helvetica;
+            background: rgb(66, 66, 66);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid rgb(135, 255, 120);
+        }
+
+        div {
+            margin: auto;
+            border: 6px solid green;
+            box-sizing: border-box;
+            border-radius: 10px 10px;
+        }
+
+        footer {
+            width: 55%;
+            text-align: end;
+        }
+
+        button {
+            border: 2px solid rgb(1, 224, 206);
+            text-decoration: none;
+            align-items: center;
+            padding: 10px;
+            margin: 80px 47%;
+            transition: 1s;
+        }
+
+        button:hover {
+            background: green;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 2px 20px;
+            font-size: x-large;
+            font-family: sans-serif;
+        }
+    </style>
+    <!-- titulo da pagina -->
+    <title>lista não ordenada</title>
+</head>
+
+<body>
+    <!-- titulo da lista -->
+    <h1>Receita de bolo</h1>
+    <p>artigo sobre ingredientes da receita de bolo</p>
+
+    <div>
+        <!-- lista não ordenada -->
+        <ul>
+            <li>leite</li>
+            <li>ovos</li>
+            <li>farinha</li>
+            <li>manteiga</li>
+            <li>oleo</li>
+            <li>trigo</li>
+        </ul>
+    </div>
+    <button id="botao">Clique</button>
+    <footer>RenanRodrigues&copy;</footer>
+</body>
+<!-- evento de click, para mudar de pagina e mudar txt do botao -->
+<script>
+    var bnt = document.getElementById("botao")
+    bnt.addEventListener("click", function () {
+        location.href = ("listasD.html"); (this.innerText = ("proximo"))
+    })
+</script>
+
+</html>

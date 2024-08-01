@@ -1,0 +1,44 @@
+body{
+    background-color: #2b2b2b;
+    color: aliceblue;
+}
+
+div{
+    margin: 0 auto;
+    padding: auto;
+}
+
+h1,h2{
+    font-family: monospace;
+    text-align: center;
+}
+
+.secao-banner{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #00c3ff;
+    border-bottom: 1px solid #00c3ff;
+    margin: 0 250px;
+}
+
+.conteudo-p{
+    text-align: left;
+    margin: 20px 250px;
+}
+
+.texto-destaque{
+    color: #00c3ff;
+}
+
+.secao-conteudo{
+    text-align: left;
+    padding:auto 100px;
+    margin: 20px 250px;
+}
+
+.secao-conteudo img{
+    width: 770px;
+    height: auto;
+    border: 8px solid #00c3ff;
+}
