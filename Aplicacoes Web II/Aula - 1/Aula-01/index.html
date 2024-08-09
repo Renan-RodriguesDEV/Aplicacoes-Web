@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="container">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicacoes Web II</title>
+    <style>
+      * {
+        margin: 50px auto 50px auto;
+        font-size: 12px;
+        font-family: "JetBrains Mono";
+        text-align: center;
+        padding: auto;
+        position: static;
+      }
+      body {
+        background: url(https://wallpapercave.com/wp/wp11314668.jpg) 100%;
+      }
+      h2 b {
+        font-size: large;
+        color: darkblue;
+      }
+      a {
+        padding: 5px;
+        color: darkred;
+        background-color: white;
+        border: 5px solid darkred;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        color: white;
+        background-color: black;
+        border: 5px solid red;
+        transition: 1s;
+      }
+      button {
+        font-size: medium;
+        background-color: white;
+        color: black;
+      }
+      button:hover {
+        transition: 0.5s;
+        font-size: small;
+        background-color: black;
+        color: white;
+      }
+      h1,
+      h2 {
+        color: white;
+        font-size: large;
+        text-align: center;
+        font-style: italic;
+        text-shadow: -2px -2px black;
+        animation: anima 5s linear 1s infinite;
+      }
+      @keyframes anima {
+        0% {
+          color: white;
+        }
+        20% {
+          color: red;
+        }
+        40% {
+          color: green;
+        }
+        60% {
+          color: blue;
+        }
+        80% {
+          color: black;
+        }
+        100% {
+          color: gray;
+        }
+      }
+    </style>
+  </head>
+  <main class="container">
+    <body id="body">
+      <div id="main"></div>
+      <h1>Bem Vindo á Aplicações Web II</h1>
+      <h2>Apresentando: Prof° Luiz Alexandre <b>as</b> (superman)</h2>
+      <button id="btn">Entrar</button>
+      <button id="sair" onclick="minhaFunc()">Sair</button>
+      <div id="nome"></div>
+      <p>
+        <a onclick="isname()" href="https://www.youtube.com/" target="_blank"
+          >Youtube</a
+        >
+      </p>
+
+      <script src="./script.js"></script>
+    </body>
+  </main>
+</html>

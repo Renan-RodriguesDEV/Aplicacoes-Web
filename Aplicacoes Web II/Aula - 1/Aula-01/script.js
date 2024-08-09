@@ -15,3 +15,10 @@ function minhaFunc() {
   h2.textContent = "Voce entrou na VJ";
   document.body.appendChild(h2);
 }
+
+function isName() {
+  var nome = prompt("Insira seu nome");
+  if (nome == "Renan") {
+    alert("Bem vindo Paizão");
+  }else{}
+}
