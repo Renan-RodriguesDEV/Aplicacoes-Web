@@ -1,0 +1,23 @@
+<!-- 8) Dado o script abaixo:
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Adicionar Elemento</title> </head> <body> <div id="lista"> <h2>Minha Lista</h2> </div> <button onclick="adicionarItem()">Adicionar Item</button>
+Adicione um paragrafo na lista com texto novo item -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Elemento</title>
+  </head>
+  <body>
+    <div id="lista"><h2>Minha Lista</h2></div>
+    <button onclick="adicionarItem()">Adicionar Item</button>
+  </body>
+  <script>
+    function adicionarItem() {
+      var lista = document.getElementById("lista");
+      var novoParagrafo = document.createElement("p"); // criando um novo paragrafo
+      novoParagrafo.innerText = "Novo item adicionado"; // texto do novo item
+      lista.appendChild(novoParagrafo);
+    }
+  </script>
+</html>

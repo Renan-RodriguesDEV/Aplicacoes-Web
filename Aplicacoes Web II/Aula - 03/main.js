@@ -30,7 +30,7 @@ console.log(lista.fill(0, 0, 10)); // preenche a lista
 l3 = ["zico", "xuxa", "pelé", "asdrubal"];
 l4 = [2, 4, 1, 2, 6, 7];
 console.log(l3.sort()); // ordena a lista de nomes
-console.log(l4.sort((a, b) => a - b)); // ordena a lista de numeros
+// console.log(l4.sort((a, b) => a - b)); // ordena a lista de numeros
 console.log(l3.reverse()); // ordena a lista reversamente
 
 let frutas = ["banana", "abobora", "melao", "tomato"];
@@ -38,3 +38,18 @@ frutas.splice(4, 0, "melancia"); // add no (indice), (sem remover) (item)
 console.log(frutas);
 str = frutas.slice(2, 1, 4);
 console.log(str);
+
+function ordenar(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        let aux = arr[i];
+        arr[i] = arr[j];
+        arr[j] = aux;
+      }
+    }
+  }
+  return arr;
+}
+ll = ordenar(l4);
+console.log(ll);
