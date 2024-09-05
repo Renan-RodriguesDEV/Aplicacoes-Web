@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calcular</h1>
+    <label for="numero">Digite um numero</label>
+    <input type="number" id="numero" placeholder="00,00" />
+    <button onclick="calcularQuadrado()">Calcular</button>
+    <p id="res"></p>
+    <script>
+      function calcular(number) {
+        return number ** 2;
+      }
+      function calcularQuadrado() {
+        // pegando o valor (value) do elemento de input HTML
+        let numero = document.getElementById("numero").value;
+        console.log(numero);
+        // convertendo para float caso seja um string
+        numero = parseFloat(numero);
+        let quadrado = calcular(numero);
+        // alterando o <p> para a reposta do calculo
+        let resp = document.getElementById("res");
+        resp.innerText = quadrado.toString();
+        // limpando o input para o próximo calculor
+        document.getElementById("numero").value = "";
+      }
+    </script>
+  </body>
+</html>
