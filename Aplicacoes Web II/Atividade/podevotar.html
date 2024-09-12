@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <h1>Direito a voto</h1>
+    <label for="idade">Digite sua idade</label>
+    <input type="number" id="idade" />
+    <button id="btn" onclick="verify()">Votar</button>
+  </body>
+  <script>
+    function isVote(idade) {
+      if (idade > 15) {
+        return "Você pode votar";
+      } else {
+        return "Você não pode votar";
+      }
+    }
+    function verify() {
+      let idade = document.getElementById("idade").value;
+      let result = isVote(idade);
+      alert(`${result} pois sua idade é ${idade}`);
+    }
+  </script>
+</html>

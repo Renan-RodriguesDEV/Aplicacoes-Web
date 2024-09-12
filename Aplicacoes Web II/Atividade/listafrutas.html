@@ -10,14 +10,14 @@
     <ul id="list"></ul>
     <script>
       //array de frutas
-      let frutas = ["a", "b", "c", "d", "e"];
+      let frutas = ["abacaxi", "banana", "caranbola", "damasco", "espectro"];
       // pegando o elemento lista
       let lista = document.getElementById("list");
       // percorrendo o array e adicionando cada item como um item na lista
       for (i = 0; i < frutas.length; i++) {
         // criando um novo item (li) com o texto do array e adicionando ele à lista
         let item = document.createElement("li");
-        item.textContent = frutas[i];
+        item.innerText = frutas[i];
         lista.appendChild(item);
       }
     </script>
