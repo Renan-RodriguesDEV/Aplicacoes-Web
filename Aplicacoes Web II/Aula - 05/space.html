@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return somar(event)">
+      <label for="input">Digite seu nome seu cabaço</label><br />
+      <input type="text" id="peso" placeholder="seu peso" /><br />
+      <input type="text" id="altura" placeholder="sua altura" /><br />
+      <input type="submit" value="Calcular" />
+    </form>
+    <div id="resultado"></div>
+  </body>
+  <script src="./space.js"></script>
+  <style>
+    * {
+      position: relative;
+      align-items: end;
+      margin: 2px 2px 2px 2px;
+      padding: 2px 2px 2px 2px;
+      background-color: brown;
+      color: thistle;
+    }
+    input {
+      background-color: black;
+      color: thistle;
+    }
+    resultado {
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      width: max-content;
+      height: max-content;
+    }
+  </style>
+</html>
