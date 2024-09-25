@@ -3,7 +3,7 @@ function enter() {
   btn.innerText = "Entrou";
   let back = document.getElementById("body");
   back.style.backgroundColor = "gray";
-  console.log("Mudando de cor"); 
+  console.log("Mudando de cor");
 }
 
 let btn = document.getElementById("btn");
@@ -18,7 +18,10 @@ function minhaFunc() {
 
 function isName() {
   var nome = prompt("Insira seu nome");
-  if (nome == "Renan") {
-    alert("Bem vindo Paizão");
-  }else{}
+  if (nome === "Renan") {
+    alert(`Bem vindo ${nome}`);
+  } else {
+    nome = prompt("Insira seu nome:");
+    alert("Seu nome é: " + nome);
+  }
 }

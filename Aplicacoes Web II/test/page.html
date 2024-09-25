@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input
+        id="email"
+        type="email"
+        maxlength="55"
+        minlength="8"
+        placeholder="Insira seu texto"
+      />
+      <input
+        id="pass"
+        type="password"
+        maxlength="6"
+        placeholder="Insira seu texto"
+      />
+      <button onclick="enviar()">enviar</button>
+    </div>
+    <div>
+      <input id="inserido" type="text" placeholder="seu inserido na lista" />
+      <ul id="list"></ul>
+      <button onclick="acrecentar()">acrecentar</button>
+    </div>
+    <div>
+      <label for="">Lista de Numeros separados por virgulá</label>
+      <input id="odr" type="text" placeholder="1,2,3..." />
+      <button onclick="ordenar()">ordenar</button>
+    </div>
+    <script src="./file.js"></script>
+    <style>
+      * {
+        padding: 2px;
+        
+      }
+      div {
+        columns: 2 2;
+        padding: 15px;
+        position: static;
+        border: solid 2px;
+      }
+    </style>
+  </body>
+</html>
