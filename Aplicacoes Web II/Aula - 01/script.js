@@ -3,11 +3,11 @@ function enter() {
   btn.innerText = "Entrou";
   let back = document.getElementById("body");
   back.style.backgroundColor = "gray";
-  console.log("Mudando de cor"); 
+  console.log("Mudando de cor");
 }
 
-let btn = document.getElementById("btn");
-btn.onclick = enter;
+// let btn = document.getElementById("btn");
+// btn.onclick = enter;
 
 function minhaFunc() {
   alert("Minha H2");
@@ -20,5 +20,6 @@ function isName() {
   var nome = prompt("Insira seu nome");
   if (nome == "Renan") {
     alert("Bem vindo Paizão");
-  }else{}
+  } else {
+  }
 }
