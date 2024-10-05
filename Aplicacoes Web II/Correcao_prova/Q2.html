@@ -1,0 +1,22 @@
+<!-- Criar uma lista -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lista de animais</h1>
+    <ul id="lista"></ul>
+    <script>
+      let animais = ["Gato", "Cachorro", "Papagaio", "Peixe", "Coelho"];
+      let lista = document.getElementById("lista");
+      for (let i = 0; i < animais.length; i++) {
+        let item = document.createElement("li");
+        item.innerText = animais[i];
+        lista.appendChild(item);
+      }
+    </script>
+  </body>
+</html>

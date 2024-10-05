@@ -1,0 +1,25 @@
+<!-- lista de tarefa -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lista de tarefa</h1>
+    <ol id="lista"></ol>
+    <input type="text" id="tarefa" placeholder="Digite seus a fazeres" />
+    <button onclick="addTask()">Adicionar tarefa</button>
+    <script>
+      function addTask() {
+        let tarefa = document.getElementById("tarefa");
+        let lista = document.getElementById("lista");
+        let novo = document.createElement("li");
+        novo.innerText = tarefa.value;
+        lista.appendChild(novo);
+        tarefa.value = "";
+      }
+    </script>
+  </body>
+</html>
