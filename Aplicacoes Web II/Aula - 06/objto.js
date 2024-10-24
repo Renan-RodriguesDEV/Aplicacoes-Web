@@ -46,13 +46,13 @@ let carros = [
   {
     modelo: "Impala 67",
     ano: 1967,
-    cor: "Pretão",
-    descricao: "Caçando demonios pelos EUA",
+    cor: "All black",
+    descricao: "V8 bebendo mais q AA",
   },
   {
     modelo: "Fiat uno Mile",
     ano: 2000,
-    cor: "Lacrado de firma",
+    cor: "com escada e de firma",
     descricao: "Eu sou a velocidade",
   },
   {
@@ -80,4 +80,4 @@ function templateString(nome, segundoNome, idade) {
   console.log(`Meu nome é ${nome} ${segundoNome} e eu tenho ${idade} de idade`);
 }
 
-templateString('little','hair',19)
+templateString("little", "hair", 19);
