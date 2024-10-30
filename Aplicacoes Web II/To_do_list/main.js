@@ -3,7 +3,7 @@ let listElement = document.querySelector("#app ul");
 let inputElement = document.querySelector("#app input");
 let buttonElement = document.querySelector("#app button");
 
-let tarefas = [];
+let tarefas = JSON.parse(localStorage.getItem("@tarefas")) || [];
 function deleteTask(posicao) {
   if (posicao < 0) {
     return false;
@@ -13,6 +13,12 @@ function deleteTask(posicao) {
   // renderizando a lista de tarefas
   renderTask();
 }
+
+function salvarTask() {
+  // salvando a lista de tarefas no local storage
+  localStorage.setItem("@tarefas", JSON.stringify(tarefas));
+}
+
 function renderTask() {
   // inicializa o elemento
   listElement.innerHTML = "";
@@ -44,12 +50,17 @@ function renderTask() {
     linkElement.setAttribute("onclick", `deleteTask(${posicao})`);
   });
 }
+
+// renderizando a lista de tarefas
+renderTask();
+
 function addTask() {
   // verifica se input.value está vazio
   if (inputElement.value === "") {
     // alertando o usuario
     console.log("task is not defined");
     alert("Digite a tarefa no campo de input!!!");
+    return false;
   } else {
     // pegando o value do inputElement para add a lista de tarefas
     let newTarefa = inputElement.value;
@@ -58,6 +69,8 @@ function addTask() {
     tarefas.push(newTarefa);
     // chama a função de rederizar uma nova tarefa na lista
     renderTask();
+    // salvando a tarefa nos dados de sessão, local storage
+    salvarTask();
     // criando um elemento a partir do valor do inputElement
     // novo = document.createElement("li");
     // novo.innerText = newTarefa;
