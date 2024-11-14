@@ -104,8 +104,8 @@ lista.map(console.log, lista);
 
 // chamando as funções
 
-// convidados("Renan", "Luiz", "Bruno");
-// newUser({ nome: "Chico", sobrenome: "Bahia", cargo: "Pedreiro" });
-// desconstructionList();
-// desconstructionObject();
-// desconstructionListTypeTwo();
+convidados("Renan", "Luiz", "Bruno");
+newUser({ nome: "Chico", sobrenome: "Bahia", cargo: "Pedreiro" });
+desconstructionList();
+desconstructionObject();
+desconstructionListTypeTwo();
