@@ -83,7 +83,6 @@ let produtos = [
   { nome: "Borracha", quantidade: 3, preco: 0.75 },
 ];
 
-let total = 0;
 const somaPrecos = produtos
   .map((produto) => produto.preco) // Cria um array apenas com os preços
   .reduce((acumulador, preco) => acumulador + preco, 0);
