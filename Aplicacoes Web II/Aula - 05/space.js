@@ -2,6 +2,7 @@ var imc;
 var resultado;
 
 function somar(event) {
+  // previne o comportamento padrão do form
   event.preventDefault();
   var peso = document.getElementById("peso").value;
   var altura = document.getElementById("altura").value;
