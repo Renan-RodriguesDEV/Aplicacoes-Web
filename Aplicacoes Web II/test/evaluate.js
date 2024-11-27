@@ -80,3 +80,9 @@ let soma = produtos
   .map((p) => p.preco)
   .reduce((soma, preco) => preco + soma, 0);
 console.log(soma);
+
+let sum = 0;
+for (p of produtos) {
+  sum += p.preco;
+}
+console.log(sum);
